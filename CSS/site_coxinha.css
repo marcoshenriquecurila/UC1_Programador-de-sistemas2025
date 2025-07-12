@@ -1,0 +1,60 @@
+/*paletade cores:
+azul principal: #2196F3
+Azulescuro: #1976D2
+Azul calro: #BBDEFB
+rosa: #F48FB1
+*/
+
+body{
+    cursor: default; /*muda o cursor para o padrão quando passa por cima do body*/
+    font-family: rubik; /*define a fonte do texto*/
+    margin: 0; /*remove a margem do body*/
+}
+h1{
+    color:white;
+    cursor: default; /*muda o cursor para o padrão quando passa por cima do título*/
+
+}
+
+.alface{
+    color: rgb(244, 236, 236);
+    font-size: 18px;
+    font-family: arial; /*define a fonte do texto*/
+    text-align: center;
+}
+
+.botaoPrincipal{
+    background: #F48FB1; /*cor de fundo do botão*/
+    color: white;
+    border: none;/*remove a borda do botão*/
+    font-size: 15px;
+    padding: 20px; /*aumenta o epsaço POR DENTRO do botão*/
+    border-radius: 15px; /*arredonda os cantos do botão | 50% deixa o botão redondo, sendo o máximo*/
+    cursor: pointer; /*muda o cursor para uma mãozinha quando passa por cima do botão*/
+    margin-top: 50px;/*aumenta o espaço POR FORA do botão*/
+    margin-right: 20px; /*aumenta o espaço POR FORA do botão*/
+}
+.botaoInvertido{
+    background: transparent; /*cor de fundo do botão*/
+    border: 3px solid #F48FB1; /*borda do botão*/
+    padding: 15px; /*aumenta o epsaço POR DENTRO do botão*/
+    border-radius: 15px; /*arredonda os cantos do botão | 50% deixa o botão redondo, sendo o máximo*/
+    color: #F48FB1; /*cor do texto do botão*/
+}  
+
+.cabecalho{
+    background: rgb(149, 132, 211);
+    padding: 20px; /*aumenta o epsaço POR FORA do cabeçalho*/
+    text-align: center;
+    
+}
+.subtitulo{
+    color: white;
+    font-size: 14px;
+    font-family: arial; /*define a fonte do texto*/
+    text-align: right;
+}
+.container{
+
+    margin-left: 30px;
+}
