@@ -40,7 +40,9 @@ h1{
     padding: 15px; /*aumenta o epsaço POR DENTRO do botão*/
     border-radius: 15px; /*arredonda os cantos do botão | 50% deixa o botão redondo, sendo o máximo*/
     color: #F48FB1; /*cor do texto do botão*/
-}  
+    margin-right: 20px;
+    margin-top: 50px;/*aumenta o espaço POR FORA do botão*/
+}   
 
 .cabecalho{
     background: rgb(149, 132, 211);
@@ -57,4 +59,11 @@ h1{
 .container{
 
     margin-left: 30px;
+}
+.botoesMenu{
+    display: flex; /* como as coisas sao exibidas, um do lado do outro*/
+    flex-direction: row; /*direção do flex row-(horizontal) ---- colum(coluna) */
+    justify-content: center; /*Ajusta o espaçamento entre os itens(between-entre os itens)  around- ao redor dos itens */
+    align-items: center;
+    
 }

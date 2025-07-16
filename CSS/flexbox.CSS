@@ -1,0 +1,18 @@
+.menu{
+    display: flex; /* como as coisas sao exibidas, um do lado do outro*/
+    flex-direction: row; /*direção do flex row-(horizontal) ---- colum(coluna) */
+    justify-content: space-between; /*Ajusta o espaçamento entre os itens(between-entre os itens)  around- ao redor dos itens */
+    align-items: center; /* Alinha todos os itens ao centro */
+}
+
+.itensMenu{
+    display: flex;
+    gap: 30px; /* Distancia entre os itens do flex..... Só funciona no flex */
+
+
+}
+.configuracaoMenu{
+    display: flex;
+    align-items: center;
+
+}
