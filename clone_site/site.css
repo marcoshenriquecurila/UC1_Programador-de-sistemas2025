@@ -1,0 +1,53 @@
+body{
+    margin:0;
+}
+
+.Cookies{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-family: Rubik;
+    margin-top: 40px;
+
+
+}
+.Cookies img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.Cabecalho{
+    background: #c0bdbd;
+    margin: 0;
+    font-family: rubik;
+    text-align: center;
+
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    color: #656565;
+    text-decoration: none; /*remove o traçado padrão do link */
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+.linksMenu a{
+    color: #656565;
+    text-decoration: none; /*remove o traçado padrão do link */
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+.BotaoPrincipal{
+    color: white;
+    background: orange;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: 0;
+
+
+
+}
