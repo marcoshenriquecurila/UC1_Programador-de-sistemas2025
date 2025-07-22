@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS javaScript</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let nome 
+        let sobrenome
+        let nome_completo
+        nome = prompt("Digite o nome do funcionário : ")
+        sobrenome = prompt("Digite o sobrenome")
+
+        nome_completo = nome + " " + sobrenome
+        alert("Seja bem-vindo(a) " + nome_completo)
+
+
+        let salario 
+        salario = prompt("Digite o salario de " + nome)
+        salario = parseInt(salario)
+
+        let bonificacao
+        bonificacao = prompt("Digite a bonificacao: ")
+        bonificacao = parseInt(bonificacao)
+
+        const total = salario + bonificacao
+        alert("O salário final de " + nome_completo + " será de : " + total)
+
+    </script>
+</body>
+</html>
