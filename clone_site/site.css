@@ -21,7 +21,7 @@ body{
     background-image: url("https://caracasquierecafe.com/wp-content/uploads/2023/08/taza-cafe-leche-bolsa-cafe-espresso-perfumado-980x656.jpg");
     background-size:cover ;
     background-position: center;
-    height: 500px;
+    height: 480px;
 
     
     font-family: rubik;
@@ -58,5 +58,10 @@ body{
     border: 0;
 
 
+
+}
+.Galeria{
+
+    background-image: center;
 
 }

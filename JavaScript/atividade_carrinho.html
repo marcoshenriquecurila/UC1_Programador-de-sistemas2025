@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Carrinho</title>
+</head>
+<body>
+    
+<h1>Marconzito Market
+    <br><br>
+    <hr>
+    
+</h1>
+
+<p>Arroz - 15,90</p>
+
+<button onclick="adicionarArroz()"> Adicionar</button>
+<button onclick="removerArroz()">Remover</button>
+<br>
+<hr>
+
+<p> Feijão - R$ 11,40</p>
+
+<button onclick="adicionarFeijao()"> Adicionar</button>
+<button onclick="removerFeijao()">Remover</button>
+<br>
+<hr>
+
+<h2>Seu carrinho
+ <br><br>
+
+    <button onclick="verCarrinho()"> Ver Carrinho</button>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    <br>
+
+
+</h2>
+
+<script>
+
+    let preco_arroz = 15.90
+    let preco_feijao = 11.40
+
+    let itensCarrinho = 0
+    let quantidade_arroz = 0
+    let quantidade_feijao = 0
+    let total_arroz = 0
+    let total_feijao = 0
+    let total_compra = 0
+
+
+    function adicionarArroz(){
+        quantidade_arroz++
+        itensCarrinho++
+        total_arroz = quantidade_arroz * preco_arroz
+
+        total_compra += preco_arroz
+    }
+    
+    function removerArroz(){
+        quantidade_arroz--
+        itensCarrinho--
+        total_arroz = quantidade_arroz*preco_arroz
+
+        total_compra -= quantidade_arroz
+
+    }
+
+    function adicionarFeijao(){
+        quantidade_feijao++
+        itensCarrinho++
+        total_feijao = quantidade_feijao * preco_feijao
+
+        total_compra += preco_feijao
+    }
+
+    function removerFeijao(){
+        quantidade_feijao--
+        itensCarrinho--
+        total_feijao -= quantidade_feijao * preco_feijao
+
+        total_compra -= quantidade_feijao
+
+    }
+
+    function verCarrinho(){
+        alert("Itens no carrinho: " + itensCarrinho + 
+        "\nquantidade arroz: " + quantidade_arroz + "| total arroz: R$ " + total_arroz + 
+        "\nquantidade feijão: " + quantidade_feijao + "| total feijão: R$ " + total_feijao+
+        "\n Total da compra: R$ " + total_compra )
+    }
+
+    function limparCarrinho(){
+        itensCarrinho = 0
+        quantidade_arroz = 0
+        quantidade_feijao = 0
+        total_arroz = 0
+        total_feijao = 0
+        total_compra = 0
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

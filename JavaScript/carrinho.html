@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    
+<h1>Carrinho</h1>
+<p>Este é o seu carrinho de compras da loja</p>
+<p>Quantidade de itens no carrinho: <span id="itensCarrinho">0</span></p>
+<button onclick="adicionarCarrinho()">Adicionar</button>
+<button onclick="removerCarrinho()">Remover Carrinho</button>
+<button onclick="limparCarrinho()">Limpar Carrinho</button>
+<button onclick="verCarrinho()">Ver Carrinho</button>
+
+ <script>
+
+    let carrinho = 0
+
+ function adicionarCarrinho(){   // sempre colocar a function sem o infen(sempre no lugar do ifen, colocar letra maíuscula)
+
+   // carrinho = carrinho + 1  // receber ele mesmo +1
+
+   // carrinho += 1  // operador +=
+
+   carrinho++  // aumenta de 1 em 1
+   document.querySelector("#itensCarrinho").innerHTML = carrinho
+
+    //variavel criada dentro da função , só existe dentro da função
+ }  // let somente uma vez, depois que criou o let, coloca somente (carrinh0 sem let)
+
+
+function verCarrinho(){
+
+    alert("Itens no carrinho: " + carrinho)
+
+
+}
+
+function limparCarrinho(){
+
+    carrinho = 0
+    document.querySelector("#itensCarrinho").innerHTML = carrinho
+
+
+}
+
+function removerCarrinho(){
+
+carrinho = carrinho - 1
+document.querySelector("#itensCarrinho").innerHTML = carrinho
+
+
+}
+</script>
+
+</body>
+</html>

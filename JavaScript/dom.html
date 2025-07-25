@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Dom</h1>
+<p>Manipular HTML via javaScript usando o Dom.</p>
+
+<p>Digite seu nome:</p>
+<input id="inputNome" />
+<button onclick="salvar()">Salvar</button>
+
+<p>Seja bem-vindo(a) <span id="textoNome">...</span></p>
+
+
+    <script>
+
+        function salvar(){
+            // pega  o valor do input e guarda em uma variável
+           let nome =  document.querySelector("#inputNome").value
+           // Altera o valor do input por nada (para limpar)
+           document.querySelector("#inputNome").value = ""
+           
+           // altera o valor do html
+           document.querySelector("#textoNome").innerHTML = nome
+
+        }
+
+    </script>
+
+</body>
+</html>
