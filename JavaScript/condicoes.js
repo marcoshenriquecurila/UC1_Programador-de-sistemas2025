@@ -40,4 +40,11 @@ function salvarTermos(){
         document.querySelector("#textoStatus").innerHTML = "termo aceito com sucesso!"
     }
 }
-function
+function esconderInput(){
+    document.querySelector("#input").style.diplay = "none"
+}
+function input(){
+    document.querySelector("#input").style.diplay = "block"
+}
+
+
