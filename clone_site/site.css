@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    overflow: scroll;
+}
+
+.Cookies{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-family: Rubik;
+    margin-top: 40px;
+
+
+}
+.Cookies img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.Cabecalho{
+    background-image: url("https://caracasquierecafe.com/wp-content/uploads/2023/08/taza-cafe-leche-bolsa-cafe-espresso-perfumado-980x656.jpg");
+    background-size:cover ;
+    background-position: center;
+    height: 480px;
+
+    
+    font-family: rubik;
+    text-align: left;
+
+}
+
+.Menu{
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    color: #656565;
+    text-decoration: none; /*remove o traçado padrão do link */
+    margin-right: 20px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+
+}
+.linksMenu a{
+    color: #656565;
+    text-decoration: none; /*remove o traçado padrão do link */
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: center;
+
+}
+.BotaoPrincipal{
+    color: white;
+    background: orange;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: 0;
+
+
+
+}
+.Galeria{
+
+    background-image: center;
+
+}

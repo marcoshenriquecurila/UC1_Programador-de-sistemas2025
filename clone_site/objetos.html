@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Objetos</h1>
+    Como criar um objeto JSON em JavaScript
+    <br><br>
+
+    <input id="nome" placeholder="Digite o nome"/>
+    <br>
+    <input  id="senha" placeholder="Digite a senha"/>
+    <br/>
+    <input  id="email" placeholder="Digite o e-mail"/>
+    <br/><br></br>
+    <button onclick="salvar()">Criar</button>
+
+    <script>
+
+        //Ojeto de usuário
+        let usuario = {
+            id: 0,
+            nome: "",
+            senha: "",
+            email: "",
+            criado_em: "",
+            ativo: true
+
+        }
+
+        function salvar(){
+
+            // Popular o objeto de acordo co os dados dos inputs
+            usuario.nome = document.querySelector("#nome").value
+            usuario.senha = document.querySelector("#senha").value
+            usuario.email = document.querySelector("#email").value
+
+            //Adicionar os ocultos (dados de controle)
+            usuario.id = 1
+            usuario.criado_em = new Date()
+
+            //Mostar os dados no console
+            console.log(usuario)
+        }
+    </script>
+
+</body>
+</html>

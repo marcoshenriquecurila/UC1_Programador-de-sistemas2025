@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>
+        // revisão da aula 01: VARIÁVEIS
+
+        //MOSTRA A MENSAGEM NO CONSOLE DO NAVEGADOR
+        console.log("revisão de javaScript")
+
+        // O ALERT  cria uma mensagem na tela e trava o navegador
+        alert("Revisão de \nJavaScript")
+
+        let tomate 
+        tomate =  prompt ("Digite p preço do tomate")
+        tomate = parseFloat(tomate)  // transforma em numero "QUEBRADO"
+
+        let hamburguer = prompt("Digite o preço do hamburguer")
+        hamburguer = parseInt(hamburguer) // transforma em numero "INTEIRO"
+
+        //Cria a variável, atribui valor e já transforma em número
+
+        let queijo = parseInt(prompt("Digiteo preço do Queijo"))
+
+        alert("Cardápio:\ntomate: R$ " + tomate +"\nhamburguer: R$ " + hamburguer +"\nqueijo: R$ " + queijo)
+
+        let preco_custo = tomate + hamburguer + queijo
+        alert("O preço de custo é: R$ " + preco_custo)
+
+        let margem_lucro = 1.50 // Isso é porcentagem
+        let preco_venda =  (preco_custo * margem_lucro) / 100 + preco_custo
+        alert("O preço final do produto será R$ " + preco_venda.toFixed(2))   // o tofixed limita a casa decimal e voce coloca quantos vc quer apos da virgula
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+        margin:0
+        
+    }
+
+.linksMenu{
+    display:flex;
+    align-items: center; /* Alinha todos os itens ao centro */
+}
+
+    .linksMenu a{
+        color: #656565;
+        text-decoration: none; /*remove o traçado padrão do link */
+        margin-right: 20px;
+        font-size: 12px;
+
+    }
+        
+        
+    .linksMenu a:hover{ /*somente para botão, modifica quando o mouse passar em cima */
+
+         color: black;
+         text-decoration: underline;
+
+    }
+
+    .fundoAbertura{
+        background-image: url("./imagem\ microsoft.avif");
+        padding: 180px 120px; /* Espaçamento por dentro (emcima,direita embaixo e esquerda)  */
+
+
+    }
+    .fundoAbertura p{
+        width: 400px;
+    }
+
+    .fundoAbertura h2{
+        font-size: 28px;
+    }
+
+    .botaoPrincipal{
+        background: #0867B8; 
+        color: white;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+
+    .botaoPrincipal:hover{
+        background-color: #075DA6;
+        transition: 0.3s;
+
+    
+    }
+    .cardProduto{
+        
+        /* background: #ccc ; */
+        font-size: 14px;
+        width: 350px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 2px 3px #EEE;
+        margin: 50px
+    }
+    .cardConteudo{
+        padding: 20px;
+
+    }
+    .cardProduto img{
+        width: 100%;
+
+    }
+    .cardConteudo strong{
+        font-size: 30px;
+        font-weight: 0;
+        margin: 0;
+    }
+    .cardProdutoFlex{
+        display: flex;
+    }
+    .linksMenuFlex{
+        display: flex;
+        justify-content: space-between;
+    }

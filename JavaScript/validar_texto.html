@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input placeholder="Digite o nome">
+    <br>
+    <input placeholder="Digite a idade">
+    <br>
+    <input placeholder="Digite o CPF">
+    <br>
+    <input placeholder="Digite o email">
+    <br>
+    <button onclick="validarDados()">salvar</button>
+    
+    <script>
+
+        
+        function validarDados(){
+            
+            let nome = document.querySelectorAll("input")[0].value
+            let idade = parseInt(document.querySelectorAll("input")[1].value)
+            let cpf = document.querySelectorAll("input")[2].value
+            let email = document.querySelectorAll("input")[3].value
+
+            if( nome.length <=  3 ) {
+                
+                
+                // length é o comprimento
+                alert(" O nome digitado é muito CURTO! ")
+                return
+            }
+            //Valida se nao é um número
+            if( isNaN(idade) == true){
+
+                alert("Digite uma idade válida...")
+                return
+            }
+
+            if(idade > 120){
+                alert("Idade inválida, deve ser menor que 120")
+                return
+
+            }
+            //validar o cpf com o comparador de DIFERENTE !=
+            if(cpf.length != 11){
+                alert("Digite cpf inválido")
+                return
+
+            }
+            if(email.includes("@") == false){
+                alert("Email inválido")
+                return;
+            }
+
+
+            alert("Cadastro realizado com SUCESSO!")
+
+
+        }
+
+    </script>
+
+</body>
+</html>

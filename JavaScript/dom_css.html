@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+<body>
+    <div id="inicio" class="animate__animated animate__backInDown">
+
+        <H1>Cadastro</H1>
+        
+        <button onclick="mostrarUsuario()">Cadastro de usuário</button>
+        <br><br>
+        <button onclick="mostrarEmpresas()">Cadatro de empresa</button>
+    </div>
+
+    <div id="usuario">
+        <h2>Usuários</h2>
+        <p>Este é o cadastro de usuários</p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="empresa">    
+        <h2>Empresas</h2>
+        <p>Este é o cadastro de uma empresa</p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+            
+    <script>
+        esconderTodos()
+        mostrarInicio()
+        
+        function esconderTodos(){
+
+
+            
+            document.querySelector("#usuario").style.display = "none"   // style ele muda o css
+            document.querySelector("#inicio").style.display = "none" 
+            document.querySelector("#empresa").style.display = "none" 
+           // document.querySelector("#usuario").style.fontSize = "20px"   // quando o estilo tiver nome composto, a segundo nome é maiúsculo
+        }
+
+        function mostrarInicio(){
+
+            document.querySelector("#inicio").style.display = "block"
+        }
+
+        function mostrarUsuario(){
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block"
+
+        }
+
+        function mostrarEmpresas(){
+            esconderTodos()
+            document.querySelector("#empresa").style.display = "block"
+
+        }
+
+        function voltar(){
+
+            esconderTodos()
+            document.querySelector("#inicio").style.display = "block"
+        }
+
+    </script>
+        
+
+</body>
+</html>
